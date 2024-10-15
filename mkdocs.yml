@@ -1,0 +1,9 @@
+site_name: Monarch Search
+theme:
+  name: material  # Optional theme, you can choose a different one if needed
+extra_css:
+  - css/custom.css
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js
+  - js/search.js
+
