@@ -1,10 +1,6 @@
-# Monarch Search
-
-Welcome to the **Monarch Search**! 
-
 ## Search Condition
 
-Please type phenotypes or genes (symbol or full name), and you will get a list of associated conditions.
+Welcome to the **Monarch Search**!  Please type phenotypes or genes (symbol or full name), and you will get a list of associated conditions.
 
 <div>
     <input type="text" id="search-input" placeholder="Search for phenotypes or genes..." autocomplete="off">
