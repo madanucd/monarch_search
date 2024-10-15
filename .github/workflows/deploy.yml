@@ -9,6 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # To allow write access to the repository
+      pages: write     # To allow publishing to GitHub Pages
+      id-token: write  # To verify the source of the deployment
+
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
