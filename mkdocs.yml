@@ -9,3 +9,6 @@ extra_javascript:
 # Enable search in the Material theme
 search:
   enable: true  # Make sure search is enabled
+nav:
+  - Home: index.md
+#  - Search: search.md  # Add this line to include the search page
