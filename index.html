@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#search-conditions" class="md-skip">
+        <a href="#monarch-search" class="md-skip">
           Skip to content
         </a>
       
@@ -198,6 +198,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -207,6 +218,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#search-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search Condition
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -232,6 +271,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#search-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search Condition
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -245,9 +301,15 @@
                   
 
 
-<h1 id="search-conditions">Search Conditions</h1>
-<p><input type="text" id="search-input" placeholder="Search for conditions, phenotypes, or genes..." autocomplete="off"></p>
-<ul id="autocomplete-list"></ul>
+<h1 id="monarch-search">Monarch Search</h1>
+<p>Welcome to the <strong>Monarch Search</strong>! </p>
+<h2 id="search-condition">Search Condition</h2>
+<p>Please type phenotypes or genes (symbol or full name), and you will get a list of associated conditions.</p>
+<div>
+    <input type="text" id="search-input" placeholder="Search for phenotypes or genes..." autocomplete="off">
+    <ul id="autocomplete-list"></ul>
+</div>
+
 <div id="results"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script>

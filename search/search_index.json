@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Search Conditions","text":""}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Monarch Search","text":"<p>Welcome to the Monarch Search! </p>"},{"location":"#search-condition","title":"Search Condition","text":"<p>Please type phenotypes or genes (symbol or full name), and you will get a list of associated conditions.</p>"}]}
