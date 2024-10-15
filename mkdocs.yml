@@ -6,4 +6,6 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js
   - js/search.js
-
+# Enable search in the Material theme
+search:
+  enable: true  # Make sure search is enabled
