@@ -18,15 +18,22 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
 
+      - name: Cache Python packages
+        uses: actions/cache@v3  # Updated to the latest version
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}  # Unique key based on OS and requirements
+          restore-keys: |
+            ${{ runner.os }}-pip-  # Restore keys for cache fallback
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'  # Specify the Python version you need
 
-      - name: Install MkDocs and dependencies
+      - name: Install dependencies
         run: |
-          pip install mkdocs
-          pip install mkdocs-material  # Install the Material theme or any other plugins you use
+          pip install -r requirements.txt  # Install dependencies from requirements.txt
 
       - name: Build the documentation
         run: mkdocs build
